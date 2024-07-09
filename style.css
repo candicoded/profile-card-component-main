@@ -21,12 +21,15 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: var(--DarkCyan);
+  background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 40vw bottom 40vh, left 37vw top 44vh;
 }
 
 main {
   background: url("./images/bg-pattern-card.svg") no-repeat;
   background-color: white;
-  width: 87%;
+  width: 21.875em;
   text-align: center;
   border-radius: 15px;
   padding-bottom: 1.5em;
@@ -80,4 +83,11 @@ footer {
   text-align: center;
   font-size: 0.8rem;
   color: var(--VeryDarkDesaturatedBlue);
+}
+
+@media screen and (min-width: 48em) {
+  
+  body {
+    background-position: right 50vw bottom 40vh, left 48vw top 50vh;
+  }
 }
